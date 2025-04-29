@@ -1,0 +1,16 @@
+parameters:
+    level: max
+    paths:
+        - src
+        - build
+    excludePaths:
+        - build/Phpstan/Tests/Rules/Fixtures
+
+services:
+    -
+        class: DaveLiddament\CustomPhpstanRulesTalkDemo\Build\Phpstan\Rules\RouteRule
+        tags:
+            - phpstan.rules.rule
+
+includes:
+    - vendor/dave-liddament/custom-phpstan-rules-talk-upgrade-rule/extension.neon

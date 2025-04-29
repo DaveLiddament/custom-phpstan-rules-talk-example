@@ -1,0 +1,7 @@
+parameters:
+    customRulesetUsed: true
+    paths:
+        - src
+
+includes:
+    - vendor/dave-liddament/custom-phpstan-rules-talk-upgrade-rule/extension.neon
